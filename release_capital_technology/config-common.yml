@@ -1,0 +1,27 @@
+spring:
+#  rabbitmq:
+#    host: 127.0.0.1
+#    port: 5672
+#    username: wangy
+#    password: wangyang
+#    virtual-host: /
+#    listener:
+#      simple: {acknowledge-mode: manual}
+
+
+
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure: {include: 'refresh,health,info,bus-refresh'}
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: SEMAPHORE
+          thread:
+            timeoutInMilliseconds: 300000

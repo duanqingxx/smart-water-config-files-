@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: group-service
+  datasource:
+    url: jdbc:mysql://10.10.10.114:3306/sewageplatformcentralizedcontrol_release_01_group?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    username: 'root'
+    password: 'Highgoal123!'
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    jackson:
+      date-format: 'yyyy-MM-dd HH:mm:ss'
+      time-zone: GMT+8

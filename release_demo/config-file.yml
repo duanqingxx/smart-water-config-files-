@@ -1,0 +1,11 @@
+spring: 
+  resources: 
+    static-locations: /META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,file:${web.upload-path}
+
+  servlet:
+    multipart:
+      maxFileSize: 50MB
+      maxRequestSize: 50MB
+web:
+  upload-path: /data/project-deployments/treatment-operation-platform/files/
+  valid-extensions: jpg,png,bmp,jpeg,doc,docx,xls,xlsx,ppt,pptx,pdf,rar,zip,7z,txt,mp4,mov

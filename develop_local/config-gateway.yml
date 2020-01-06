@@ -1,0 +1,83 @@
+spring:
+  application:
+    name: gateway
+auth:
+  skip:
+    urls: /JWT-CLIENT/auth,/JWT-CLIENT/token/refresh
+jwt:
+  blacklist:
+    key:
+      format: JWT_BLACKLIST::%s
+  secret:
+    key: asdfghjkl
+
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
+  MaxAutoRetries: 0
+  MaxAutoRetriesNextServer: 1
+
+zuul:
+  sensitive-headers:
+
+  host:
+    socket-timeout-millis: 60000
+    connect-timeout-millis: 150000
+  routes:
+    settings:
+      path: /api/settingsService/**
+      serviceId: settings-service
+    usercenter:
+      path: /api/userService/**
+      serviceId: user-service
+    utilcenter:
+      path: /api/utilService/**
+      serviceId: util-service
+    devicecenter:
+      path: /api/deviceService/**
+      serviceId: device-service
+    checkService:
+      path: /api/checkService/**
+      serviceId: check-service
+    curingService:
+      path: /api/curingService/**
+      serviceId: curing-service
+    repairService:
+      path: /api/repairService/**
+      serviceId: repair-service
+    maintenanceService:
+      path: /api/maintenanceService/**
+      serviceId: maintenance-service
+    meterService:
+      path: /api/meterService/**
+      serviceId: meter-service
+    processService:
+      path: /api/processService/**
+      serviceId: process-service
+    groupService:
+      path: /api/groupService/**
+      serviceId: group-service
+    logService:
+      path: /api/logService/**
+      serviceId: log-service
+    managementCockpitService:
+      path: /api/managementCockpitService/**
+      serviceId: managementCockpit-service
+    scheduleService:
+      path: /api/scheduleService/**
+      serviceId: schedule-service
+    fileService:
+      path: /api/fileService/**
+      serviceId: file-service
+    limsService:
+      path: /api/limsService/**
+      serviceId: lims-service
+    dataCollectorService:
+      path: /api/dataCollectorService/**
+      serviceId: data-collector-service
+    alarmService:
+      path: /api/alarmService/**
+      serviceId: alarm-service
+    scadaService:
+      path: /api/scadaService/**
+      serviceId: scada-service
