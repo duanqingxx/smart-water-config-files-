@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: data-collector-service
+
+
+
+box-cloud:
+  idServerUrl: 'http://124.42.41.41:7002/core/'
+  appServerApiUrl: 'http://124.42.41.41:7010/api/client/'
+  commServerApiUrl: 'http://124.42.41.41:7020/api/'
+  commServerSignalRUrl: 'http://124.42.41.41:7020/push'
+  hdataServerApiUrl: 'http://124.42.41.41:8096/api/'
+  username: 'dongba'
+
+  password: 'Highgoal123&*'
+  clientId: 'fboxsdkc'
+  clientSecret: '07736a8c3d2d4a03b61d5c98a3c68665'
+opentsdb:
+#  serviceUrl: http://192.168.2.102:5000
+  serviceUrl: http://124.42.42.247:9002
+  
+
+
+
+data-collect:
+  update-mysql-latest-data: false
+  insert-mysql-data: false
+  insert-tsdb: false
+
+feign:
+  client:
+    config:
+      default:
+        connect-timeout: 20000
+        read-timeout: 20000
