@@ -2,7 +2,7 @@ spring:
   application:
     name: lims-service
   datasource:
-    url: jdbc:mysql://10.10.10.112:3306/sewageplatformcentralizedcontrol_release_09_lims?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    url: jdbc:mysql://10.10.10.112:3306/sewage_09_lims?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
     username: 'root'
     password: 'Highgoal123!'
     type: com.alibaba.druid.pool.DruidDataSource
