@@ -23,7 +23,7 @@ opentsdb:
 
 data-collect:
   update-mysql-latest-data: true
-  insert-mysql-data: true
+  insert-mysql-data: false
   insert-tsdb: true
 
 feign:
