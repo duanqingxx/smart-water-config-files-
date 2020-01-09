@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: data-collector-service
+
+
+
+box-cloud:
+  idServerUrl: https://account.highgoaltech.com/core/
+  appServerApiUrl: http://app.highgoaltech.com/api/client/
+  commServerApiUrl: http://cs.highgoaltech.com/api/
+  commServerSignalRUrl: http://cs.highgoaltech.com/push/
+  hdataServerApiUrl: http://hs.highgoaltech.com/api/
+  username: 'yangzhoujieyuan'
+  password: 'Huaqiang!705'
+  clientId: 'fboxsdkc'
+  clientSecret: '329f07e60be207971c5ccbc97113d24f'
+opentsdb:
+  serviceUrl: http://115.29.172.116:8000
+
+
+
+data-collect:
+  update-mysql-latest-data: true
+  insert-mysql-data: false
+  insert-tsdb: true
+
+feign:
+  client:
+    config:
+      default:
+        connect-timeout: 20000
+        read-timeout: 20000
