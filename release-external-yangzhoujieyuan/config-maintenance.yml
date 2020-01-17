@@ -2,7 +2,7 @@ spring:
   application:
     name: maintenance-service
   datasource:
-    url: jdbc:mysql://115.29.172.116:3306/sewage_05_maintenance?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    url: jdbc:mysql://115.29.172.116:3333/sewage_05_maintenance?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
     username: 'root'
     password: 'Highgoal123!'
     type: com.alibaba.druid.pool.DruidDataSource
