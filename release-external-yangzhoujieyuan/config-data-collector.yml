@@ -15,7 +15,7 @@ box-cloud:
   clientId: 'fboxsdkc'
   clientSecret: '329f07e60be207971c5ccbc97113d24f'
 opentsdb:
-  serviceUrl: http://115.29.172.116:8000
+  serviceUrl: http://127.0.0.1:8000
 
 
 
